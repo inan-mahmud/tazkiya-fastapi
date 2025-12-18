@@ -1,0 +1,93 @@
+# ===============================
+# Python
+# ===============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ===============================
+# IDE / Editor
+# ===============================
+
+# VS Code / Cursor
+.vscode/
+.cursor/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# ===============================
+# Environment & Secrets
+# ===============================
+
+# Environment variables (NEVER commit secrets!)
+.env
+.env.local
+.env.*.local
+*.env
+
+# ===============================
+# Database
+# ===============================
+
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ===============================
+# Logs & Cache
+# ===============================
+
+# Logs
+*.log
+logs/
+
+# pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy cache
+.mypy_cache/
+
+# ===============================
+# OS Files
+# ===============================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===============================
+# Misc
+# ===============================
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
