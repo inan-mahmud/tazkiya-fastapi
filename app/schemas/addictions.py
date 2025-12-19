@@ -39,7 +39,7 @@ class AddictionUpdate(BaseModel):
     severity: SeverityLevel | None = None
 
     class Config:
-        son_schema_extra = {
+        json_schema_extra = {
             "example": {
                 "name": "Social Media",
                 "severity": "high",

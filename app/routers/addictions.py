@@ -61,7 +61,7 @@ def list_addictions(category: AddictionCategory = None, severity: SeverityLevel 
     }
 
 # ============ READ ONE ===============
-@router.get("/addictions/{addiction_id}", response_model=AddictionResponse)
+@router.get("/{addiction_id}", response_model=AddictionResponse)
 def get_addiction(addiction_id: UUID, db: Session = Depends(get_db)):
     """
     Get details of a specific addiction type by ID
@@ -104,6 +104,7 @@ def update_addiction(
     return db_addiction
 
 # ========= DELETE ===========
+@router.delete("/{addiction_id}", status_code= 204)
 def delete_addiction(addiction_id: UUID, db: Session = Depends(get_db)):
     """ Delete an addiction by ID"""
     db_addiction = db.query(Addictions).filter(Addictions.id == str(addiction_id)).first()
