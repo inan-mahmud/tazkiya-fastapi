@@ -32,6 +32,20 @@ class AddictionCreate(BaseModel):
             }
         }
 
+class AddictionUpdate(BaseModel):
+    name: str | None = Field(default=None, min_length=2, max_length=100)
+    description: str | None = Field(default=None, min_length=10)
+    category: AddictionCategory | None = None
+    severity: SeverityLevel | None = None
+
+    class Config:
+        son_schema_extra = {
+            "example": {
+                "name": "Social Media",
+                "severity": "high",
+            }
+        }
+
 
 class AddictionResponse(BaseModel):
     id: UUID

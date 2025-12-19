@@ -1,0 +1,1 @@
+from .addictions import router as addiction_router
